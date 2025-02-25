@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", serif;
+    font-family: "Poppins", serif;
+    font-weight : 600;
+}
+
+/* styles.css */
+
+
+
+
+/* Keep navbar at the top */
+
+
+/* Center only the form */
+.form-container {
+    width:40%;
+    
+    background: white;
+    padding: 3%;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(128, 128, 128, 0.708);
+
+    /* Center form */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form-container input{
+	margin-bottom : 16px;
+}
+
+/* Style the save button */
+.save-button {
+    width: 30%; /* Set width to 30% */
+    background-color: #007bff; /* Bootstrap primary blue */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Space between icon and text */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect */
+.save-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Active (clicked) effect */
+.save-button:active {
+    background-color: #004085;
+    transform: scale(0.98);
+}
+
+/* Remove default focus outline */
+.save-button:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+/* Style the icon inside the button */
+.save-button .material-symbols-outlined {
+    font-size: 18px; /* Adjust icon size */
+    vertical-align: middle;
+    margin:0;
+    padding:0;
+}
+
+/* Card Styling */
+
+
+.card {
+
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Image inside anchor */
+.image-link img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  
+    transition: opacity 0.3s ease-in-out;
+}
+
+.image-link:hover img {
+    opacity: 0.85;
+}
+
+/* Title & Price Styling */
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    
+}
+
+.text-success {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+/* Spacing */
+.card-body {
+    padding: 15px;
+}
+
+.listing-title{
+	color : red !important;
+}
+
+/* Ensure the background covers the whole page including the navbar */
+
+
+/* Fix Navbar Background */
+.navbar {
+	border-bottom : 1px solid rgba(255, 255, 255, 0.1);
+	
+   
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transperent !important; /* Fix typo */
+    /* Glass effect */
+    padding: 20px 30px;
+     
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-brand{
+	color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.navbar a {
+    color: rgba(255, 255, 255, 0.9) !important; /* White text for contrast */
+    font-size: 15px; /* Slightly bigger for readability */
+    font-weight: bold; /* Make it stand out */
+    text-transform: uppercase; /* Modern styling */
+    margin: 0 15px; /* Space between links */
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    color: #f4d03f !important; /* Golden shade for a luxurious feel */
+}
+
+
+
+/* Push content down to prevent overlapping */
