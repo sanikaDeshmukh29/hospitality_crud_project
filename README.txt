@@ -1,24 +1,25 @@
-# Hospitality CRUD Project
+Hospitality CRUD Project
 
-## 📌 Project Overview
-This is a **Hospitality CRUD** web application built using **Java, JSP, Servlets, and MySQL**. It allows users to manage hotel listings, including adding, editing, and deleting listings. The project follows **MVC architecture** and uses **Maven** for dependency management.
+Project Overview
+This is a Hospitality CRUD web application built using Java, JSP, Servlets, and MySQL. It allows users to manage hotel listings, including adding, editing, and deleting listings. The project follows MVC architecture and uses Maven for dependency management.
 
-## ✨ Features
-- 🏨 View all hotel listings
-- ➕ Add new listings
-- ✏️ Edit existing listings
-- ❌ Delete listings
-- 💬 Submit and view reviews
+Features
+- View all hotel listings
+- Add new listings
+- Edit existing listings
+- Delete listings
+- Submit and view reviews
 
-## 🛠 Technologies Used
-- **Backend:** Java, Servlets, JSP
-- **Frontend:** HTML, CSS, JSP
-- **Database:** MySQL
-- **Build Tool:** Maven
-- **Server:** Apache Tomcat
 
-## 📂 Project Structure
-```plaintext
+Technologies Used
+- Backend: Java, Servlets, JSP
+- Frontend: HTML, CSS, JSP
+- Database: MySQL
+- Build Tool: Maven
+- Server: Apache Tomcat
+
+Project Structure
+```
 ├── src
 │   ├── main
 │   │   ├── java
@@ -50,7 +51,7 @@ This is a **Hospitality CRUD** web application built using **Java, JSP, Servlets
 ├── test
 ```
 
-## 🗄️ Database Setup
+ Database Setup
 1. Install MySQL and create a database:
    ```sql
    CREATE DATABASE hospitality_db;
@@ -72,19 +73,19 @@ This is a **Hospitality CRUD** web application built using **Java, JSP, Servlets
    private static final String PASSWORD = "your_password";
    ```
 
-## 🚀 Running the Project
+ Running the Project
 1. Clone the repository:
    ```sh
    git clone https://github.com/your-username/hospitality-crud.git
    ```
-2. Open the project in **Eclipse** or **IntelliJ**.
-3. Configure **Tomcat Server**.
+2. Open the project in Eclipse or IntelliJ.
+3. Configure Tomcat Server.
 4. Run the project and access it in the browser:
    ```sh
    http://localhost:8080/hospitality_crud_project/listings
    ```
 
-## 🏠 Default Home Page Issue Fix
+ Default Home Page Issue Fix
 To make `/listings` the default page when running the project:
 1. Open `web.xml` and add this:
    ```xml
@@ -94,12 +95,9 @@ To make `/listings` the default page when running the project:
    ```
 2. Restart the server and ensure it navigates to `/listings`.
 
-## 🤝 Contributions
-Feel free to **contribute** by submitting pull requests or reporting issues!
+ Contributions
+Feel free to contribute by submitting pull requests or reporting issues!
 
-## 📜 License
-This project is **open-source** and available under the **MIT License**.
-
----
-💡 *Happy Coding!* 🎉
+ License
+This project is open-source and available under the MIT License.
 
