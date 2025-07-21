@@ -33,7 +33,7 @@ public class EditListingController extends HttpServlet {
         String idParam = req.getParameter("id");
         
         if (idParam == null || idParam.isEmpty()) {
-            resp.sendRedirect("listings/home");
+            resp.sendRedirect("listings");
             return;
         }
 
@@ -42,7 +42,7 @@ public class EditListingController extends HttpServlet {
             Listings listing = hotelDao.getListingById(listingId);
             
             if (listing == null) {
-                resp.sendRedirect("listings/home");
+                resp.sendRedirect("listings");
                 return;
             }
 
@@ -51,7 +51,7 @@ public class EditListingController extends HttpServlet {
 
         } catch (Exception e) {
             e.printStackTrace();
-            resp.sendRedirect("listings/home");
+            resp.sendRedirect("listings");
         }
     }
 
@@ -69,7 +69,7 @@ public class EditListingController extends HttpServlet {
             boolean success = hotelDao.updateListing(updatedListing);
 
             if (success) {
-                resp.sendRedirect(req.getContextPath()+"/listings/home");
+                resp.sendRedirect(req.getContextPath()+"/listings");
             } else {
                 req.setAttribute("errMsg", "Failed to update listing.");
                 req.getRequestDispatcher("/edit_listing.jsp").forward(req, resp);

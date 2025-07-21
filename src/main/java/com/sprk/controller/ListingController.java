@@ -31,7 +31,7 @@ public class ListingController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try {
-            List<Listings> listings = hotelDao.getAllListings(); // ✅ Always fetch fresh data
+            List<Listings> listings = hotelDao.getAllListings(); //  Always fetch fresh data
             req.setAttribute("listings", listings);
         } catch (Exception e) {
             req.setAttribute("errMsg", "Error fetching listings: " + e.getMessage());

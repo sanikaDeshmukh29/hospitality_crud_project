@@ -39,7 +39,7 @@ public class DeleteListingController extends HttpServlet {
 	            boolean success = hotelDao.deleteListing(id);
 
 	            if (success) {
-	                resp.sendRedirect(req.getContextPath()+"/listings/home");
+	                resp.sendRedirect(req.getContextPath()+"/listings");
 	            } else {
 	                req.setAttribute("errMsg", "Failed to delete listing.");
 	                req.getRequestDispatcher("/listing_details.jsp").forward(req, resp);
